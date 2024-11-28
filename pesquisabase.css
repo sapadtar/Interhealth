@@ -1,0 +1,283 @@
+header {
+    padding: 0;
+    position: relative;
+    height: 100px; /* Altura fixa para o cabeçalho */
+    width: 125%; /* Ocupa toda a largura da tela */
+    background-image: url(header.png);
+    left: -50px;
+    top: -10px;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+  }
+
+  .topo{
+
+    top: 0;
+    z-index: 10;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    height: auto; /* Ajusta a altura ao conteúdo */
+}
+
+
+body{
+    background-color: #f9ddf4;
+      overflow-x: hidden; 
+      margin: 0; 
+      padding: 0; 
+  }
+  .box5 {
+    color: aliceblue;
+    width: 750px;
+    height: 350px;
+    background-color: #b7a4db;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    left: 1.5%;
+    text-align: left;
+    border-radius: 30px;
+    padding: 20px;
+    position: relative;
+    top: -650px; /* Unidade corrigida */
+}
+.box5 h1 {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Fredoka One', sans-serif;
+
+    
+}
+.box5 p {
+    text-align: left;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.topico{
+    width: 650px;
+    height: 350px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    text-align: left;
+    border-radius: 30px;
+    padding: 20px;
+    position: relative;
+    top: -650px; 
+    left: -50px;
+    white-space: normal;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    line-height: 1.3; 
+  
+
+}
+.topico h1{
+
+    font-family: 'Fredoka One', sans-serif;
+    color: #000000;
+    font-size: 40px;
+    position: relative;
+    top: -50px;
+
+}
+
+.topico p{
+    font-family: 'Lato', sans-serif;
+   color: #333;
+    font-size: 20px;
+    position: relative;
+    top: -50px; 
+
+}
+.topicoimg {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    width: 650px;
+    position: relative;
+    top: -800px;
+    left: -50px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+.topicoimg1 {
+    flex: 1; 
+    padding-right: 10px; 
+}
+
+.topicoimg2 {
+    flex-shrink: 0; 
+}
+
+.topicoimg img {
+    max-width: 320px;
+    height: auto;
+    border-radius: 15px; 
+}
+
+.topicoimg h1 {
+    font-family: 'Fredoka One', sans-serif;
+    color: #000000;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.topicoimg p {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    font-size: 20px;
+    line-height: 1.6; 
+}
+
+.lista {
+    width: 650px;
+    height: 350px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    text-align: left;
+    border-radius: 30px;
+    padding: 20px;
+    position: relative;
+    top: -650px; 
+    left: -50px;
+}
+.lista h1{
+    font-family: 'Fredoka One', sans-serif;
+    color: #000000;
+    font-size: 40px;
+    position: relative;
+    top: -50px;
+
+
+}
+.lista p{
+    font-family: 'Lato', sans-serif;
+    color: #333;
+     font-size: 20px;
+     position: relative;
+     top: -50px; 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* botoes la */
+
+  .botao{
+    border: none;
+      background: none;
+       outline: none;
+        display: block;
+        cursor: pointer;
+   z-index: 10;
+}
+
+
+   /* Estilo para o botão */
+   #speakButton {
+    position: fixed;      /* Fixa o botão na posição */
+    left: -10px;           /* Define a distância do canto esquerdo */
+    bottom: 20px;         /* Define a distância do canto inferior */
+    background: none;     /* Remove o fundo do botão */
+    border: none;         /* Remove a borda do botão */
+    cursor: pointer;      /* Define o cursor de mão para o botão */
+    z-index: 1000;        /* Garante que ele fique acima de outros elementos */
+}
+
+/* Estilo para a bolha de fala */
+.speech-bubble {
+    position: fixed;
+    bottom: 190px;        /* Coloca a bolha acima do botão */
+    left: 20px;
+    width: 150px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    display: none;        /* Começa escondida */
+    font-size: 14px;
+}
+
+.speech-bubble::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+/* Contêiner principal para manter o hover na área de ativação e na lista de botões */
+.menu-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Área de ativação invisível */
+.hover-area {
+    width: 20px;
+    height: 100%;
+    background: transparent;
+}
+
+/* Lista de botões */
+.lista_de_botoes {
+    position: fixed;
+    top: 50%;
+    right: -150px; /* Inicialmente escondida */
+    transform: translateY(-50%);
+    transition: right 0.3s ease; /* Animação ao aparecer */
+    background-color: #9469df;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1001;
+}
+
+/* Mantém a lista de botões visível enquanto o mouse está em qualquer parte do contêiner */
+.menu-container:hover .lista_de_botoes {
+    right: -60px; /* Aparece próximo ao canto direito */
+}
+
+/* Botões da lista */
+.lista_botoes button {
+    display: block;
+    width: 150px;
+    background-color: #9469df;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+
+
+
+@media (max-width: 1340px) {
+    .logo {
+        width: 1500;
+    }}
