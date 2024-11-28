@@ -6,8 +6,8 @@ header {
     height: 100px; /* Altura fixa para o cabeçalho */
     width: 125%; /* Ocupa toda a largura da tela */
     background-image: url(header.png);
-    left: -50px;
-    top: -10px;
+    left: -40px;
+    top: -5px;
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -20,13 +20,13 @@ header {
   }
 
   .topo {
-    
     top: 0;
     z-index: 1;
     justify-content: space-around; /* Espaçamento entre botões */
     align-items: center; /* Centraliza os botões verticalmente */
     min-height: 120px; /* Define uma altura mínima */
     padding: 10px; /* Espaçamento interno */
+    
 }
 
 
@@ -131,12 +131,13 @@ color: #000000;
                     }
     .box3{
         color: aliceblue;
-        width: 890px;
+        width: 500px;
         height: 286px;
         background-color:#f3f3f3;
         margin-right: 450px;
         position: relative;
-     left: 120.2px;
+        margin: 0 auto;
+
      top: -900;
      text-align: left;
      border-radius: 30px;
@@ -160,8 +161,8 @@ color: #000000;
     }
     .box5 {
         color: aliceblue;
-        width: 900px;
-        height: 350px;
+        width: 450px;
+        height: 250px;
         background-color: #b7a4db;
         margin: 0 auto; /* Centraliza horizontalmente */
         left: 3%;
@@ -182,6 +183,7 @@ color: #000000;
         text-align: left;
         color: #f3f3f3;
         font-family: 'Lato', sans-serif;
+        font-size: 15px;
 
     }
     .barra{
@@ -198,22 +200,45 @@ color: #000000;
         background-repeat: no-repeat; 
 
     }
-    .credtext{
-background-color: #f9ddf4;
-text-align: left;
-color: #ffffff;
+    .credtext {
+        background-color: #f9ddf4;
+        text-align: left;
+        color: #ffffff;
         width: 900px;
         height: 250px;
         margin: 0 auto; /* Centraliza horizontalmente */
-        left: 1%;
         padding: 20px;
         position: relative;
         top: -550px; /* Unidade corrigida */
+    
+        /* Layout flexível para alinhar imagem e texto */
+        display: flex;
+        align-items: center;
     }
+    
+    /* Estilo da imagem circular */
+    .credtext img {
+        width: 300px;       /* Tamanho da imagem */
+        height: 200px;      /* Tamanho da imagem */
+        border-radius: 50%; /* Forma circular */
+        margin-right: 15px; /* Espaço entre imagem e texto */
+        object-fit: cover;  /* Ajusta a imagem dentro do círculo */
+        position: relative;
+        left: -50px;
+    }
+    
+    /* Estilo do texto dentro da div */
+    .credtext h1 {
+        font-size: 1.8em;
+        margin: 0 0 10px; /* Margem abaixo do título */
+        color: #4b2a63; /* Cor do título (contraste com fundo) */
+    }
+    
     .credtext p{
         text-align: left;
         color: #000000;
         font-family: 'Lato', sans-serif;
+        font-size: 18px;
     }
     
     .top1{
@@ -226,13 +251,44 @@ font-family: 'Fredoka One', sans-serif;
 font-weight: 700;
 
     }
+
+    .lista {
+        width: 650px;
+        height: 350px;
+        margin: 0 auto; /* Centraliza horizontalmente */
+        text-align: left;
+        border-radius: 30px;
+        padding: 20px;
+        position: relative;
+        top: -400px; 
+        left: -180px;
+    }
+    .lista h1{
+        font-family: 'Fredoka One', sans-serif;
+        color: #000000;
+        font-size: 40px;
+        position: relative;
+        top: -50px;
+    
+    
+    }
+    .lista p{
+        font-family: 'Lato', sans-serif;
+        color: #333;
+         font-size: 20px;
+         position: relative;
+         top: -50px; 
+    
+    }
+
+
     .destaques{
         top: -650px;
          position: relative;
          height: 100px;
          width: 1200px;
          margin: 0 auto;
-         left: -2%;
+         left: -0.1%;
          text-align: center;
          font-size: 40px;
         background-image: url(header.png);
@@ -331,7 +387,6 @@ font-weight: 700;
                 display: block;
                 cursor: pointer;
            z-index: 1000;
-           
         }
         .pesquisas
         {
