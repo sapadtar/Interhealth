@@ -7,7 +7,7 @@ header {
     width: 125%; /* Ocupa toda a largura da tela */
     background-image: url(header.png);
     left: -40px;
-    top: -5px;
+    top: -9.9px;
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
