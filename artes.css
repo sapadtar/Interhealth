@@ -30,17 +30,16 @@ body{
   }
 
 .desenho1{
-    width: 650px;
+    width: 550px;
     height: 350px;
     background-color: #ffffff; /* Fundo branco */
     border: 5px solid #b7a4db; /* Borda roxa */
     margin: 0 auto; /* Centraliza horizontalmente */
     left: 3%;
-    border-radius: 30px;
-    padding: 20px;
+    padding: 10px;
     position: relative;
     top: -650px; /* Unidade corrigida */
-
+   
 }
 .desenho1 h1{
     font-family: 'Fredoka One', sans-serif;
@@ -48,7 +47,7 @@ body{
     color: #b7a4db;
     font-size: 40px;
     position: relative;
-    top: -30px;
+    top: -50px;
 }
 .resumo{
     width: 380px;
@@ -56,7 +55,7 @@ body{
     text-align: left;
     font-size: 20px;
     position: relative;
-    top: -40px;
+    top: 10px;
     white-space: normal; /* Permite quebra de linha automática */
     word-wrap: break-word; /* Quebra palavras muito longas */
     overflow-wrap: break-word; /* Alternativa para navegadores modernos */
@@ -66,31 +65,32 @@ body{
 }
 
 .arte1{
-    position: absolute;
-    top: 40%; 
-    right: -30px;
-    transform: translateY(-50%);
-    max-width: 320px;
-    height: auto;
-    display: block; /* Garante que a imagem ocupe uma linha */
+    position: relative;
+  top: 30%;
+    margin: 0 auto;
+        transform: translateY(-50%);
+        display: block;
+
     
 }
 .arte1 a{
     font-family: 'Lato', sans-serif;
     position: relative;
-    text-align: right;
+position: relative;
+top: 5px;
+left: -8px;
     right: 180px;
+
 }
 
 .desenho2{
-    width: 650px;
-    height: 350px;
+    width: 550px;
+    height: 450px;
     background-color: #ffffff; /* Fundo branco */
     border: 5px solid #b7a4db; /* Borda roxa */
     margin: 0 auto; /* Centraliza horizontalmente */
     left: 3%;
-    border-radius: 30px;
-    padding: 20px;
+    padding: 10px;
     position: relative;
     top: -650px; /* Unidade corrigida */
 
@@ -101,7 +101,7 @@ body{
     color: #b7a4db;
     font-size: 40px;
     position: relative;
-    top: -30px;
+    top: -50px;
 }
 .resumo2{
     width: 380px;
@@ -120,21 +120,23 @@ body{
 }
 
 .arte2{
-    position: absolute;
-    top: 40%; 
-    left: -30px;
+position: relative;
+top: 30%;
+margin: 0 auto;
+left: -2px;
     transform: translateY(-50%);
-    max-width: 320px;
-   
+    display: block;
+
     
     
     
 }
 .arte2 a{
-    font-family: 'Lato', sans-serif;
-    position: relative;
-    text-align: right;
-    right: 180px;
+      font-family: 'Lato', sans-serif;
+position: relative;
+top: 5px;
+right: -400px;
+
 }
 
 .box5 {
